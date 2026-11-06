@@ -94,12 +94,20 @@ button {
 .brand-mark {
     width: 30px;
     height: 30px;
+    flex: 0 0 30px;
+    overflow: hidden;
     border-radius: 9px;
     background: #d9f36a;
     display: grid;
     place-items: center;
     font: 800 19px Manrope;
     color: #1d3022;
+}
+.brand-mark img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .sidebar-label,
 .section-kicker,

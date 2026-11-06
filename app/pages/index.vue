@@ -4,7 +4,7 @@ import type { ApplicationStatus } from '~/types/ApplicationStatus';
 import { ApplicationStatuses, ApplicationStatusIcons } from '~/types/ApplicationStatus';
 
 definePageMeta({ layout: false })
-
+useHead({ title: 'Job Tracker | Application Dashboard' })
 
 interface Application {
   id: number
@@ -161,7 +161,7 @@ function formatDate(value: string) {
   <main class="workspace">
     <aside class="sidebar">
       <a class="brand" href="#overview" aria-label="JobTracker home">
-        <span class="brand-mark">jT</span>
+        <span class="brand-mark"><img src="/img/avatar-64.png" alt="JobTracker Logo" /></span>
         <span>Job Tracker</span>
       </a>
 
